@@ -6,7 +6,6 @@ local hasGameStarted = false
 local battleManager = "de7152"
 
 function deal()
-
   self.shuffle()
 
   local currentLocations = kantoLocations
@@ -120,4 +119,8 @@ function createButtons()
         position={0,-1,3.5}, rotation={0,0,0}, height=440, width=1400, font_size=200,
     })
   end
+end
+
+function getKantoLocations()
+  return kantoLocations
 end
